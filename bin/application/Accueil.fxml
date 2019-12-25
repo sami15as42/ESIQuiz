@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #201230;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane layoutX="103.0" layoutY="128.0" prefHeight="236.0" prefWidth="497.0" style="-fx-background-color: #c23434;">
+         <children>
+            <JFXButton fx:id="formateurBtn" layoutX="56.0" layoutY="180.0" onAction="#formateurBtnClic" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #850000;" text="Formateur" textFill="#d3cdcd" />
+            <JFXButton layoutX="313.0" layoutY="180.0" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #850000;" text="Apprenant" textFill="#d3cdcd" />
+            <ImageView fitHeight="150.0" fitWidth="128.0" layoutX="56.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons8-salle-de-classe-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="128.0" layoutX="313.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons8-étudiant-homme-100.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="246.0" orientation="VERTICAL" prefHeight="236.0" prefWidth="4.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="241.0" layoutY="24.0" prefHeight="50.0" prefWidth="220.0" text="Bienvenue dans ESIQuiz" textAlignment="CENTER" textFill="#dda8a8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="74.0" text="Vous allez vous connecter en tant que ?" textFill="#978d8d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
